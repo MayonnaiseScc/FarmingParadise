@@ -1,98 +1,412 @@
 <!doctype html>
 <html lang="en">
-		<head>
-				<meta charset="utf-8" />
-				<meta name="viewport" content="width=device-width,initial-scale=1" />
-				<title>Farming Paradise • Rust PVE Server</title>
-				<meta name="description" content="Your peaceful Rust escape: relax, farm, progress. Active admins, free skinbox, bosses & events." />
-				<meta property="og:title" content="Farming Paradise • Rust PVE" />
-				<meta property="og:description" content="Relax and farm with friends. Join now!" />
-				<meta property="og:image" content="YOUR_OG_IMAGE_URL" />
-				<meta property="og:type" content="website" />
-				<link rel="preconnect" href="https://fonts.googleapis.com">
-				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-				<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-				<style>
-						:root{
-								--bg:#0b0f0c;--card:#111712;--accent:#7df58a;--accent2:#ffd54a;--muted:#9bb09c;--text:#eaf1ec;
-						}
-						*{box-sizing:border-box}
-						body{margin:0;background:linear-gradient(180deg,#0b0f0c,#101611);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial}
-						a{color:inherit;text-decoration:none}
-						.container{max-width:1100px;margin:0 auto;padding:20px}
-						.hero{position:relative;display:grid;gap:20px;align-items:center;padding:48px 20px}
-						.hero-bg{position:absolute;inset:0;background:url('YOUR_BACKGROUND_IMAGE_URL') center/cover no-repeat;opacity:.22;filter:saturate(1.1) contrast(1.1)}
-						.hero-veil{position:absolute;inset:0;background:radial-gradient(70% 60% at 50% 0%,rgba(11,15,12,.65),transparent 70%)}
-						.hero > *{position:relative}
-						.badge{display:inline-block;background:rgba(125,245,138,.12);color:var(--accent);border:1px solid rgba(125,245,138,.35);padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px;letter-spacing:.2px}
-						h1{font-family:Montserrat,system-ui;margin:12px 0 6px;font-size:40px;line-height:1.05}
-						.sub{color:var(--muted);font-size:18px;margin:0 0 18px}
-						.cta{display:flex;gap:12px;flex-wrap:wrap}
-						.btn{padding:12px 16px;border-radius:10px;font-weight:700;border:1px solid transparent;transition:.15s transform ease}
-						.btn:hover{transform:translateY(-1px)}
-						.btn-primary{background:var(--accent);color:#0a0e0b}
-						.btn-ghost{background:transparent;border-color:#2a362d;color:var(--text)}
-						.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:26px 0}
-						.card{background:var(--card);border:1px solid #1e2a21;border-radius:14px;padding:16px}
-						.card h3{margin:0 0 6px;font-size:18px}
-						.card p{margin:0;color:var(--muted);font-size:14px}
-						.section{padding:24px 20px}
-						.media{border-radius:14px;overflow:hidden;border:1px solid #1e2a21;background:#0a0f0b}
-						footer{padding:26px 20px;color:#9aa79b;text-align:center;border-top:1px solid #1e2a21;margin-top:24px}
-						/* small */
-						@media (max-width:520px){h1{font-size:34px}}
-				</style>
-		</head>
-		<body>
-				<header class="hero">
-						<div class="hero-bg"></div>
-						<div class="hero-veil"></div>
-						<div class="container">
-								<span class="badge">Rust PVE • Chill • Farming</span>
-								<h1>Farming Paradise</h1>
-								<p class="sub">Your peaceful Rust escape to relax and farm with friends.</p>
-								<div class="cta">
-										<!-- Replace IP below. Steam will open the game and connect. -->
-										<a class="btn btn-primary" href="steam://connect/YOUR.SERVER.IP:PORT">Join via Steam</a>
-										<a class="btn btn-ghost" href="https://discord.gg/YOUR_INVITE" target="_blank" rel="noopener">Join Discord</a>
-										<a class="btn btn-ghost" href="#trailer">Watch Trailer</a>
-								</div>
-						</div>
-				</header>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Farming Paradise • Rust PVE</title>
+    <meta name="description" content="Your peaceful Rust escape to relax and farm with friends. Active admins, free skinbox, bosses & events." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0b0f0c;
+            --card: #111712;
+            --accent: #7df58a;
+            --accent2: #ffd54a;
+            --muted: #9bb09c;
+            --text: #eaf1ec;
+            --ink: #cfe4d2;
+            --warn: #ffb4b4
+        }
 
-				<main class="container">
-						<section class="section">
-								<div class="grid">
-										<div class="card"><h3>Farming-Centered</h3><p>Water, clones, progression—optimized for growers.</p></div>
-										<div class="card"><h3>Active Admins</h3><p>Friendly, fair moderation and fast help.</p></div>
-										<div class="card"><h3>Free Skinbox</h3><p>Style your gear without grind walls.</p></div>
-										<div class="card"><h3>Skilltree Levels</h3><p>Progression that rewards time on the server.</p></div>
-										<div class="card"><h3>Bosses & Events</h3><p>Optional fights and custom encounters.</p></div>
-										<div class="card"><h3>Personal Helis & Raids</h3><p>End-game toys in a PVE sandbox.</p></div>
-								</div>
-						</section>
+        * {
+            box-sizing: border-box
+        }
 
-						<section id="trailer" class="section">
-								<h2 style="font-family:Montserrat;margin:0 0 12px;font-size:24px;">Trailer</h2>
-								<div class="media">
-										<!-- If you have the MP4, host it and use <video>. Otherwise embed YouTube: -->
-										<iframe width="100%" height="420" src="https://www.youtube.com/embed/VIDEO_ID?rel=0" title="Farming Paradise Trailer" frameborder="0" allowfullscreen></iframe>
-								</div>
-						</section>
+        body {
+            margin: 0;
+            background: linear-gradient(180deg,#0b0f0c,#101611);
+            color: var(--text);
+            font-family: Inter,system-ui,Segoe UI,Roboto,Arial
+        }
 
-						<section class="section">
-								<h2 style="font-family:Montserrat;margin:0 0 12px;font-size:24px;">How to Join</h2>
-								<ol style="margin:0 0 12px 20px;line-height:1.7">
-										<li>Click <b>Join via Steam</b> (opens Rust and connects).</li>
-										<li>Or, in Rust: press <b>F1</b> → type <code>connect YOUR.SERVER.IP:PORT</code>.</li>
-										<li>Hop in Discord for help & updates.</li>
-								</ol>
-						</section>
-				</main>
+        header {
+            position: relative;
+            padding: 64px 20px 28px;
+            text-align: center;
+            overflow: hidden
+        }
 
-				<footer>
-						© <span id="y"></span> Farming Paradise • PVE Rust Server
-				</footer>
-				<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-		</body>
+        .header-bg {
+            position: absolute;
+            inset: 0;
+            background: url('bg.jpg') center/cover no-repeat;
+            filter: saturate(1.05) contrast(1.05);
+            opacity: .25
+        }
+
+        .header-veil {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(70% 60% at 50% 0%,rgba(0,0,0,.55),transparent 70%)
+        }
+
+        header > * {
+            position: relative;
+            z-index: 1
+        }
+
+        h1 {
+            font-family: Montserrat,sans-serif;
+            font-weight: 900;
+            font-size: 44px;
+            margin: 0 0 8px;
+            color: var(--accent2);
+            letter-spacing: .5px
+        }
+
+        .sub {
+            margin: 0 0 18px;
+            color: var(--ink);
+            font-size: 18px
+        }
+
+        .cta {
+            display: inline-block;
+            margin: 6px 6px 0;
+            padding: 12px 16px;
+            border-radius: 10px;
+            font-weight: 700;
+            text-decoration: none;
+            border: 1px solid transparent
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #0a0e0b
+        }
+
+        .btn-ghost {
+            background: transparent;
+            border-color: #2a362d;
+            color: var(--text)
+        }
+
+        .btn-gold {
+            background: var(--accent2);
+            color: #000
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 36px 20px
+        }
+
+        h2 {
+            font-family: Montserrat,sans-serif;
+            margin: 0 0 12px;
+            color: var(--accent)
+        }
+        /* quick facts */
+        .facts {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+            margin: 16px 0
+        }
+
+        .fact {
+            background: #0f1510;
+            border: 1px solid #203024;
+            border-radius: 12px;
+            padding: 12px
+        }
+
+            .fact b {
+                display: block;
+                color: #fff;
+                margin-bottom: 4px
+            }
+
+            .fact small {
+                color: #c9d7cc
+            }
+        /* tabs -> text heavy */
+        .tabs {
+            margin-top: 8px
+        }
+
+        .tabbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 0 0 10px
+        }
+
+            .tabbar button {
+                appearance: none;
+                border: 1px solid #243328;
+                background: #0f1510;
+                color: var(--text);
+                padding: 10px 12px;
+                border-radius: 10px;
+                font-weight: 700;
+                cursor: pointer
+            }
+
+                .tabbar button[aria-selected="true"] {
+                    background: var(--accent);
+                    color: #08110a;
+                    border-color: transparent
+                }
+
+        .panel {
+            display: none;
+            background: var(--card);
+            border: 1px solid #1e2a21;
+            border-radius: 14px;
+            padding: 18px;
+            line-height: 1.7
+        }
+
+            .panel.active {
+                display: block
+            }
+
+            .panel h3 {
+                margin: 0 0 8px;
+                color: var(--accent2)
+            }
+
+            .panel p {
+                margin: 0 0 10px;
+                color: #dbe8de
+            }
+
+        .note {
+            background: #1a1212;
+            border: 1px solid #432828;
+            border-left: 4px solid #e87070;
+            padding: 10px 12px;
+            border-radius: 10px;
+            margin: 10px 0;
+            color: #ffdada
+        }
+
+        ul.list {
+            margin: 0 0 8px 18px;
+            color: #cfdfd2
+        }
+
+        code {
+            background: #0f1510;
+            border: 1px solid #203024;
+            padding: 1px 6px;
+            border-radius: 6px
+        }
+
+        .gallery {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+            margin-top: 8px
+        }
+
+            .gallery img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                border-radius: 12px;
+                border: 1px solid #1e2a21;
+                background: #0a0f0b
+            }
+
+        footer {
+            padding: 26px 20px;
+            color: #9aa79b;
+            text-align: center;
+            border-top: 1px solid #1e2a21
+        }
+
+        @media (max-width:520px) {
+            h1 {
+                font-size: 34px
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-bg"></div>
+        <div class="header-veil"></div>
+        <h1>Farming Paradise</h1>
+        <p class="sub">Your peaceful Rust escape to relax and farm with friends.</p>
+        <a class="cta btn-primary" href="rust://connect/89.213.214.15:28020">Join via Rust</a>
+        <a class="cta btn-ghost" href="steam://run/252490//+connect%2089.213.214.15:28020">Open in Steam</a>
+        <a class="cta btn-ghost" href="https://discord.gg/vGU8zeWC" target="_blank" rel="noopener">Join Discord</a>
+        <a class="cta btn-gold" href="https://farming-paradise.tebex.io/category/2862993" target="_blank" rel="noopener">Server Shop / VIP</a>
+    </header>
+
+    <main class="container">
+        <!-- QUICK FACTS -->
+        <section aria-label="Quick facts">
+            <div class="facts">
+                <div class="fact"><b>Wipes</b><small>Map: 1st & 3rd Thursday @ 2PM EST</small><br><small>Blueprints: <b>BP wipes every Force</b></small></div>
+                <div class="fact"><b>Playstyle</b><small>PVE • Bosses • Events • Raidable & Abandoned Bases</small></div>
+                <div class="fact"><b>QoL</b><small>Free Skinbox • /tp GUI • /warp • /voteday • Skilltree</small></div>
+                <div class="fact"><b>Progression</b><small>Farm → sell at Community Center via <code>/warp</code> • RP economy</small></div>
+            </div>
+        </section>
+
+        <!-- FEATURES (TEXT-FOCUSED TABS) -->
+        <section>
+            <h2>Features</h2>
+            <div class="tabs" id="tabs">
+                <div class="tabbar" role="tablist" aria-label="Server Features">
+                    <button role="tab" aria-controls="start" aria-selected="true">Getting Started</button>
+                    <button role="tab" aria-controls="activities">Activities & Events</button>
+                    <button role="tab" aria-controls="minigames">Minigames</button>
+                    <button role="tab" aria-controls="farming">Farming & Ganja</button>
+                    <button role="tab" aria-controls="raiding">Raiding</button>
+                    <button role="tab" aria-controls="commands">Commands</button>
+                    <button role="tab" aria-controls="vip">VIP Perks</button>
+                    <button role="tab" aria-controls="rules">Rules</button>
+                </div>
+
+                <div class="panel active" id="start" role="tabpanel">
+                    <h3>Welcome to Farming Paradise</h3>
+                    <p>Make RP your way—most efficient via <b>farming</b>. Sell crops at the <b>Community Center</b> using <code>/warp</code>. Use <code>/info</code> anytime to reopen the info UI.</p>
+                    <p><b>Wipe Schedule</b>: Map wipes the <b>1st & 3rd Thursday</b> each month at <b>2PM EST</b>. <b>Blueprints wipe every Force</b>.</p>
+                    <h3>Farmer Point Tiers</h3>
+                    <p>Seed Sower (≤1k) • Farmer (1k–5k) • Pro Farmer (5k–10k) • Farm Master (10k–25k) • Elite (25k–50k) • Diamond (50k+).</p>
+                    <p>Track progress with <code>/stats</code>, and invest XP in buffs via <code>/st</code> (Skilltree).</p>
+                </div>
+
+                <div class="panel" id="activities" role="tabpanel">
+                    <h3>Heli Signals</h3>
+                    <p>Buy patrol helicopters in multiple difficulties to fight at your base. They <b>cannot damage</b> your base.</p>
+                    <h3>Bosses</h3>
+                    <p>Map-roaming bosses (~5,000 HP) that <b>reward RP</b> on kill.</p>
+                    <h3>World Events</h3>
+                    <p>Convoy, Supermarket, Gas Station, Armored Train, and more. <b>Events reward RP</b>; buyables do not.</p>
+                </div>
+
+                <div class="panel" id="minigames" role="tabpanel">
+                    <h3>Survival Arena</h3>
+                    <p>Battle Royale—last player standing wins. When you see it announced in chat, type <code>/survival</code> to join.</p>
+                    <h3>Zombie Infection</h3>
+                    <p>Survivors vs Zombies. A random player becomes <b>Zombie Prime</b> with high HP. Two zombie hits convert survivors. Survive until the timer expires.</p>
+                </div>
+
+                <div class="panel" id="farming" role="tabpanel">
+                    <h3>Ganja Buffs</h3>
+                    <p>Low Joint → Wood boost • Medium Joint → Ore boost • High Joint → Scrap boost.</p>
+                    <h3>Growing & Crafting</h3>
+                    <p><b>H genes</b> decide quality: 4H=Low • 5H=Low+Medium • 6H=Low+Medium+High. Roll joints at a <b>Mixing Table</b> → “Show Custom Recipes”.</p>
+                    <h3>Water & Pumps</h3>
+                    <p>“Place anywhere” water pumps: <code>/pump</code> (help) and <code>/pump craft</code> to craft.</p>
+                </div>
+
+                <div class="panel" id="raiding" role="tabpanel">
+                    <h3>Raidable Bases (Buyables)</h3>
+                    <p>Check price with <code>/raidcost</code> and start with <code>/buyraid</code>. View raiding stats via <code>/rb</code>.</p>
+                    <h3>Abandoned Bases</h3>
+                    <p>After <b>5 days</b> offline, bases become raidable to all. These are <b>PVP zones</b>—if you die inside, you <b>lose your inventory</b>.</p>
+                    <div class="note"><b>Defendable Homes</b> — Build a <b>separate base</b> for these. They can foundation‑wipe and are tough.</div>
+                </div>
+
+                <div class="panel" id="commands" role="tabpanel">
+                    <h3>Core</h3>
+                    <ul class="list">
+                        <li><code>/tp</code> (teleport GUI), <code>/warp</code> (teleport GUI), <code>/voteday</code> (skip night)</li>
+                        <li><code>/s</code> (store UI), <code>/transfer</code> (send RP), <code>/trade &lt;player&gt;</code></li>
+                        <li><code>/st</code> (Skilltree), <code>/stats</code> (farming stats), <code>/playtime</code>/<code>/playtime top</code></li>
+                        <li><code>/remove</code> (demolish in TC range), <code>/lockmini</code></li>
+                        <li><code>/info</code> (open info UI)</li>
+                        <li><code>/pump</code> help, <code>/pump craft</code> (Anywhere Pump)</li>
+                    </ul>
+                    <h3>Skinner</h3>
+                    <ul class="list">
+                        <li><code>/sb</code> (Skinbox), <code>/sd</code> (skin placed items), <code>/skinrequest</code> (workshop skin by ID)</li>
+                    </ul>
+                    <h3>Signs</h3>
+                    <ul class="list">
+                        <li><code>/sil &lt;url&gt; (raw)</code> — set sign image</li>
+                        <li><code>/silrestore</code> [all] [raw] — restore sign</li>
+                    </ul>
+                    <h3>Teleportation</h3>
+                    <ul class="list">
+                        <li><code>/sethome (name)</code>, <code>/listhomes</code>, <code>/delhome (name)</code>, <code>/home (name)</code></li>
+                        <li><code>/tpr &lt;player&gt;</code>, <code>/tpa (name)</code></li>
+                    </ul>
+                </div>
+
+                <div class="panel" id="vip" role="tabpanel">
+                    <h3>VIP Level 1</h3>
+                    <p>Level 1 VIP kits, faster teleport, larger backpack, <b>5,000 RP</b> on purchase.</p>
+                    <h3>VIP Level 2</h3>
+                    <p>Level 2 VIP kits, even faster teleport, even larger backpack, <b>8,000 RP</b> on purchase.</p>
+                    <h3>VIP Level 3</h3>
+                    <p>Level 3 VIP kits, <b>instant teleport</b>, <b>144‑slot backpack</b>, <b>instant craft</b>, <b>no durability</b>, <code>/rspawn mini</code> (plus horse/boat/rhib), <b>12,000 RP</b>, and a <b>personal recycler</b>.</p>
+                    <p>Also available: <b>10k RP</b> and <b>Personal Recycler</b> individually.</p>
+                    <p><a class="cta btn-gold" href="https://farming-paradise.tebex.io/category/2862993" target="_blank" rel="noopener">Open VIP Shop</a></p>
+                </div>
+
+                <div class="panel" id="rules" role="tabpanel">
+                    <h3>Be Cool</h3>
+                    <ul class="list">
+                        <li>No harassment, racism, sexism, or discrimination.</li>
+                        <li>No begging or trolling. Global chat is English only (use team chat otherwise).</li>
+                        <li>No exploiting, bots, third‑party cheats, or bug abuse.</li>
+                    </ul>
+                    <h3>Respect Builds & Access</h3>
+                    <ul class="list">
+                        <li>Don’t block other players, bases, monuments, or public access.</li>
+                        <li>Don’t obstruct bases you didn’t build.</li>
+                        <li>No griefing bases or stealing minis. No TC spam (ban risk).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top:26px">
+            <h2>Screenshots</h2>
+            <div class="gallery">
+                <img src="MayoBigFarm.png" alt="Farming Paradise screenshot 1">
+                <img src="FarminSOULoldBase.png" alt="Farming Paradise screenshot 2">
+                <img src="CrunchyInterior.png" alt="Farming Paradise screenshot 3">
+            </div>
+        </section>
+
+        <section style="margin-top:26px">
+            <h2>How to Join</h2>
+            <ol style="margin:0 0 12px 20px;line-height:1.7">
+                <li>Click <b>Join via Rust</b> (opens Rust and connects).</li>
+                <li>Or press <b>F1</b> in Rust → type <code>connect 89.213.214.15:28020</code>.</li>
+                <li>Join our Discord for help & updates.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>© <span id="y"></span> Farming Paradise • PVE Rust Server</footer>
+
+    <script>
+        // simple tabs
+        (function () {
+            const wrap = document.getElementById('tabs'); if (!wrap) return;
+            const btns = [...wrap.querySelectorAll('[role="tab"]')];
+            const panels = [...wrap.querySelectorAll('.panel')];
+            function show(id) {
+                panels.forEach(p => p.classList.toggle('active', p.id === id));
+                btns.forEach(b => b.setAttribute('aria-selected', b.getAttribute('aria-controls') === id));
+            }
+            btns.forEach(b => b.addEventListener('click', () => show(b.getAttribute('aria-controls'))));
+            show('start');
+        })();
+        document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+</body>
 </html>
+
