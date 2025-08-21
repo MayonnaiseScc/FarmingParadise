@@ -20,9 +20,7 @@
             --warn: #ffb4b4
         }
 
-        * {
-            box-sizing: border-box
-        }
+        * { box-sizing: border-box }
 
         body {
             margin: 0;
@@ -52,10 +50,7 @@
             background: radial-gradient(70% 60% at 50% 0%,rgba(0,0,0,.55),transparent 70%)
         }
 
-        header > * {
-            position: relative;
-            z-index: 1
-        }
+        header > * { position: relative; z-index: 1 }
 
         h1 {
             font-family: Montserrat,sans-serif;
@@ -66,11 +61,7 @@
             letter-spacing: .5px
         }
 
-        .sub {
-            margin: 0 0 18px;
-            color: var(--ink);
-            font-size: 18px
-        }
+        .sub { margin: 0 0 18px; color: var(--ink); font-size: 18px }
 
         .cta {
             display: inline-block;
@@ -82,159 +73,58 @@
             border: 1px solid transparent
         }
 
-        .btn-primary {
-            background: var(--accent);
-            color: #0a0e0b
-        }
+        .btn-primary { background: var(--accent); color: #0a0e0b }
+        .btn-ghost { background: transparent; border-color: #2a362d; color: var(--text) }
+        .btn-gold { background: var(--accent2); color: #000 }
 
-        .btn-ghost {
-            background: transparent;
-            border-color: #2a362d;
-            color: var(--text)
-        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 36px 20px }
+        h2 { font-family: Montserrat,sans-serif; margin: 0 0 12px; color: var(--accent) }
 
-        .btn-gold {
-            background: var(--accent2);
-            color: #000
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 36px 20px
-        }
-
-        h2 {
-            font-family: Montserrat,sans-serif;
-            margin: 0 0 12px;
-            color: var(--accent)
-        }
-        /* quick facts */
         .facts {
             display: grid;
             gap: 10px;
             grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
             margin: 16px 0
         }
+        .fact { background: #0f1510; border: 1px solid #203024; border-radius: 12px; padding: 12px }
+        .fact b { display: block; color: #fff; margin-bottom: 4px }
+        .fact small { color: #c9d7cc }
 
-        .fact {
-            background: #0f1510;
-            border: 1px solid #203024;
-            border-radius: 12px;
-            padding: 12px
+        .tabs { margin-top: 8px }
+        .tabbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 10px }
+        .tabbar button {
+            appearance: none; border: 1px solid #243328; background: #0f1510; color: var(--text);
+            padding: 10px 12px; border-radius: 10px; font-weight: 700; cursor: pointer
         }
+        .tabbar button[aria-selected="true"] { background: var(--accent); color: #08110a; border-color: transparent }
 
-            .fact b {
-                display: block;
-                color: #fff;
-                margin-bottom: 4px
-            }
-
-            .fact small {
-                color: #c9d7cc
-            }
-        /* tabs -> text heavy */
-        .tabs {
-            margin-top: 8px
-        }
-
-        .tabbar {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin: 0 0 10px
-        }
-
-            .tabbar button {
-                appearance: none;
-                border: 1px solid #243328;
-                background: #0f1510;
-                color: var(--text);
-                padding: 10px 12px;
-                border-radius: 10px;
-                font-weight: 700;
-                cursor: pointer
-            }
-
-                .tabbar button[aria-selected="true"] {
-                    background: var(--accent);
-                    color: #08110a;
-                    border-color: transparent
-                }
-
-        .panel {
-            display: none;
-            background: var(--card);
-            border: 1px solid #1e2a21;
-            border-radius: 14px;
-            padding: 18px;
-            line-height: 1.7
-        }
-
-            .panel.active {
-                display: block
-            }
-
-            .panel h3 {
-                margin: 0 0 8px;
-                color: var(--accent2)
-            }
-
-            .panel p {
-                margin: 0 0 10px;
-                color: #dbe8de
-            }
+        .panel { display: none; background: var(--card); border: 1px solid #1e2a21; border-radius: 14px; padding: 18px; line-height: 1.7 }
+        .panel.active { display: block }
+        .panel h3 { margin: 0 0 8px; color: var(--accent2) }
+        .panel p { margin: 0 0 10px; color: #dbe8de }
 
         .note {
-            background: #1a1212;
-            border: 1px solid #432828;
-            border-left: 4px solid #e87070;
-            padding: 10px 12px;
-            border-radius: 10px;
-            margin: 10px 0;
-            color: #ffdada
+            background: #1a1212; border: 1px solid #432828; border-left: 4px solid #e87070;
+            padding: 10px 12px; border-radius: 10px; margin: 10px 0; color: #ffdada
         }
 
-        ul.list {
-            margin: 0 0 8px 18px;
-            color: #cfdfd2
-        }
+        ul.list { margin: 0 0 8px 18px; color: #cfdfd2 }
 
-        code {
-            background: #0f1510;
-            border: 1px solid #203024;
-            padding: 1px 6px;
-            border-radius: 6px
-        }
+        code { background: #0f1510; border: 1px solid #203024; padding: 1px 6px; border-radius: 6px }
 
         .gallery {
-            display: grid;
-            gap: 10px;
+            display: grid; gap: 10px;
             grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
             margin-top: 8px
         }
-
-            .gallery img {
-                width: 100%;
-                height: 180px;
-                object-fit: cover;
-                border-radius: 12px;
-                border: 1px solid #1e2a21;
-                background: #0a0f0b
-            }
-
-        footer {
-            padding: 26px 20px;
-            color: #9aa79b;
-            text-align: center;
-            border-top: 1px solid #1e2a21
+        .gallery img {
+            width: 100%; height: 180px; object-fit: cover; border-radius: 12px;
+            border: 1px solid #1e2a21; background: #0a0f0b
         }
 
-        @media (max-width:520px) {
-            h1 {
-                font-size: 34px
-            }
-        }
+        footer { padding: 26px 20px; color: #9aa79b; text-align: center; border-top: 1px solid #1e2a21 }
+
+        @media (max-width:520px) { h1 { font-size: 34px } }
     </style>
 </head>
 <body>
@@ -243,8 +133,8 @@
         <div class="header-veil"></div>
         <h1>Farming Paradise</h1>
         <p class="sub">Your peaceful Rust escape to relax and farm with friends.</p>
-        <a class="cta btn-primary" href="rust://connect/89.213.214.15:28020">Join via Rust</a>
-        <a class="cta btn-ghost" href="steam://run/252490//+connect%2089.213.214.15:28020">Open in Steam</a>
+        <!-- Removed: Join via Rust button -->
+        <a class="cta btn-ghost" href="steam://run/252490//+connect%2089.28.237.79:28015">Open Rust</a>
         <a class="cta btn-ghost" href="https://discord.gg/vGU8zeWC" target="_blank" rel="noopener">Join Discord</a>
         <a class="cta btn-gold" href="https://farming-paradise.tebex.io/category/2862993" target="_blank" rel="noopener">Server Shop / VIP</a>
     </header>
@@ -314,7 +204,7 @@
                     <p>Check price with <code>/raidcost</code> and start with <code>/buyraid</code>. View raiding stats via <code>/rb</code>.</p>
                     <h3>Abandoned Bases</h3>
                     <p>After <b>5 days</b> offline, bases become raidable to all. These are <b>PVP zones</b>—if you die inside, you <b>lose your inventory</b>.</p>
-                    <div class="note"><b>Defendable Homes</b> — Build a <b>separate base</b> for these. They can foundation‑wipe and are tough.</div>
+                    <div class="note"><b>Defendable Homes</b> — Build a <b>separate base</b> for these. They can foundation-wipe and are tough.</div>
                 </div>
 
                 <div class="panel" id="commands" role="tabpanel">
@@ -349,7 +239,7 @@
                     <h3>VIP Level 2</h3>
                     <p>Level 2 VIP kits, even faster teleport, even larger backpack, <b>8,000 RP</b> on purchase.</p>
                     <h3>VIP Level 3</h3>
-                    <p>Level 3 VIP kits, <b>instant teleport</b>, <b>144‑slot backpack</b>, <b>instant craft</b>, <b>no durability</b>, <code>/rspawn mini</code> (plus horse/boat/rhib), <b>12,000 RP</b>, and a <b>personal recycler</b>.</p>
+                    <p>Level 3 VIP kits, <b>instant teleport</b>, <b>144-slot backpack</b>, <b>instant craft</b>, <b>no durability</b>, <code>/rspawn mini</code> (plus horse/boat/rhib), <b>12,000 RP</b>, and a <b>personal recycler</b>.</p>
                     <p>Also available: <b>10k RP</b> and <b>Personal Recycler</b> individually.</p>
                     <p><a class="cta btn-gold" href="https://farming-paradise.tebex.io/category/2862993" target="_blank" rel="noopener">Open VIP Shop</a></p>
                 </div>
@@ -359,7 +249,7 @@
                     <ul class="list">
                         <li>No harassment, racism, sexism, or discrimination.</li>
                         <li>No begging or trolling. Global chat is English only (use team chat otherwise).</li>
-                        <li>No exploiting, bots, third‑party cheats, or bug abuse.</li>
+                        <li>No exploiting, bots, third-party cheats, or bug abuse.</li>
                     </ul>
                     <h3>Respect Builds & Access</h3>
                     <ul class="list">
@@ -383,8 +273,8 @@
         <section style="margin-top:26px">
             <h2>How to Join</h2>
             <ol style="margin:0 0 12px 20px;line-height:1.7">
-                <li>Click <b>Join via Rust</b> (opens Rust and connects).</li>
-                <li>Or press <b>F1</b> in Rust → type <code>connect 89.213.214.15:28020</code>.</li>
+                <li>Click <b>Open Rust</b> (launches Rust via Steam and connects).</li>
+                <li>Or press <b>F1</b> in Rust → type <code>connect 89.28.237.79:28015</code>.</li>
                 <li>Join our Discord for help & updates.</li>
             </ol>
         </section>
@@ -396,7 +286,7 @@
         // simple tabs
         (function () {
             const wrap = document.getElementById('tabs'); if (!wrap) return;
-            const btns = [...wrap.querySelectorAll('[role="tab"]')];
+            const btns = [...wrap.querySelectorAll('[role="tab"])];
             const panels = [...wrap.querySelectorAll('.panel')];
             function show(id) {
                 panels.forEach(p => p.classList.toggle('active', p.id === id));
@@ -409,4 +299,3 @@
     </script>
 </body>
 </html>
-
