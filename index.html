@@ -127,6 +127,14 @@
       animation: fadeUp 0.6s ease both;
     }
 
+    .hero-inner {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 48px;
+      align-items: center;
+      margin-bottom: 48px;
+    }
+
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(20px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -157,22 +165,24 @@
       color: var(--bright);
       line-height: 0.95;
       letter-spacing: 0.02em;
-      margin-bottom: 8px;
     }
 
     .hero h1 .highlight { color: var(--accent); }
-    .hero h1 .highlight2 { color: var(--accent2); }
+
+    .hero-right {
+      border-left: 1px solid var(--border);
+      padding-left: 48px;
+    }
 
     .hero-sub {
       font-size: 13px;
       color: var(--text);
       line-height: 1.7;
-      max-width: 480px;
-      margin: 20px 0 32px;
+      margin: 0 0 24px;
       letter-spacing: 0.02em;
     }
 
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 48px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
 
     .btn {
       font-family: var(--mono);
@@ -689,6 +699,8 @@
       .topbar { padding: 0 16px; }
       .nav a:not(.btn-vip):not(.btn-discord) { display: none; }
       .hero { padding: 48px 16px 40px; }
+      .hero-inner { grid-template-columns: 1fr; gap: 24px; }
+      .hero-right { border-left: none; border-top: 1px solid var(--border); padding-left: 0; padding-top: 24px; }
       section { padding: 48px 16px; }
       .screenshot-grid { grid-template-columns: 1fr; }
       footer { padding: 20px 16px; }
@@ -716,22 +728,27 @@
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-label">// Rust PVE Server</div>
-  <h1>
-    FARMING<br>
-    <span class="highlight">PARA</span><span class="highlight2">DISE</span>
-  </h1>
-  <p class="hero-sub">A farming-focused Rust PVE server. Grow crops, earn RP, fight bosses, run events, and build with friends. The more you farm, the more you earn — and the more you can do. Monthly wipes, active admins, no raid grief.</p>
-  <div class="hero-actions">
-    <a class="btn btn-primary" href="steam://run/252490//+connect%2089.213.214.15:28020">▶ OPEN IN RUST</a>
-    <a class="btn btn-gold" href="https://farming-paradise.tebex.io/category/2862993" target="_blank" rel="noopener">⭐ VIP SHOP</a>
-    <a class="btn" href="https://discord.gg/k8Afn6cSUm" target="_blank" rel="noopener">Discord</a>
-  </div>
-
-  <div class="connect-strip" onclick="copyIP()" title="Click to copy connect command">
-    <div class="cs-label">F1 Connect</div>
-    <div class="cs-ip" id="connectTxt">connect 89.213.214.15:28020</div>
-    <div class="cs-copy">Copy</div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-label">// Rust PVE Server</div>
+      <h1>
+        FARMING<br>
+        <span class="highlight">PARADISE</span>
+      </h1>
+    </div>
+    <div class="hero-right">
+      <p class="hero-sub">A farming-focused Rust PVE server. Grow crops, earn RP, fight bosses, run events, and build with friends. The more you farm, the more you earn — and the more you can do. Monthly wipes, active admins, no raid grief.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="steam://run/252490//+connect%2089.213.214.15:28020">▶ OPEN IN RUST</a>
+        <a class="btn btn-gold" href="https://farming-paradise.tebex.io/category/2862993" target="_blank" rel="noopener">⭐ VIP SHOP</a>
+        <a class="btn" href="https://discord.gg/k8Afn6cSUm" target="_blank" rel="noopener">Discord</a>
+      </div>
+      <div class="connect-strip" onclick="copyIP()" title="Click to copy connect command">
+        <div class="cs-label">F1 Connect</div>
+        <div class="cs-ip" id="connectTxt">connect 89.213.214.15:28020</div>
+        <div class="cs-copy">Copy</div>
+      </div>
+    </div>
   </div>
 
   <div class="stats-row">
