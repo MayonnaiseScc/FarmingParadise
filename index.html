@@ -24,7 +24,7 @@
       --blue:     #4da6ff;
       --text:     #bbb;
       --bright:   #e0e0e0;
-      --muted:    #555;
+      --muted:    #888;
       --mono:     'DM Mono', monospace;
       --display:  'Bebas Neue', sans-serif;
     }
@@ -721,16 +721,16 @@
     FARMING<br>
     <span class="highlight">PARA</span><span class="highlight2">DISE</span>
   </h1>
-  <p class="hero-sub">Your peaceful Rust escape. Farm crops, fight bosses, run events, and build with friends — no raid grief, active admins, monthly wipes.</p>
+  <p class="hero-sub">A farming-focused Rust PVE server. Grow crops, earn RP, fight bosses, run events, and build with friends. The more you farm, the more you earn — and the more you can do. Monthly wipes, active admins, no raid grief.</p>
   <div class="hero-actions">
-    <a class="btn btn-primary" href="steam://run/252490//+connect%2050.20.242.36:28015">▶ OPEN IN RUST</a>
+    <a class="btn btn-primary" href="steam://run/252490//+connect%2089.213.214.15:28020">▶ OPEN IN RUST</a>
     <a class="btn btn-gold" href="https://farming-paradise.tebex.io/category/2862993" target="_blank" rel="noopener">⭐ VIP SHOP</a>
     <a class="btn" href="https://discord.gg/k8Afn6cSUm" target="_blank" rel="noopener">Discord</a>
   </div>
 
   <div class="connect-strip" onclick="copyIP()" title="Click to copy connect command">
     <div class="cs-label">F1 Connect</div>
-    <div class="cs-ip" id="connectTxt">connect 50.20.242.36:28015</div>
+    <div class="cs-ip" id="connectTxt">connect 89.213.214.15:28020</div>
     <div class="cs-copy">Copy</div>
   </div>
 
@@ -868,42 +868,77 @@
     <div class="feature-card">
       <div class="feature-icon">🌾</div>
       <div class="feature-title">FARMING & ECONOMY</div>
-      <div class="feature-desc">Farm crops, craft Ganja joints for buffs (wood, ore, scrap), and sell at the Community Center via <code>/warp</code>. Earn RP and climb Farmer Point tiers from Seed Sower to Diamond.</div>
+      <div class="feature-desc">Farming is the backbone of the server. Grow crops, harvest them, and sell to NPC vendors at the Community Center via <code>/warp</code>. Earn RP, hit rank milestones, and unlock rewards. Best genes for output: <b>3Y 3G</b>. Use <a href="https://rustbreeder.com" target="_blank" rel="noopener" style="color:var(--accent2)">rustbreeder.com</a> to plan crossbreeding paths.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🍃</div>
+      <div class="feature-title">GANJA SYSTEM</div>
+      <div class="feature-desc">Grow hemp with H genes to harvest weed, then craft joints at a Mixing Table (click "Show Custom Recipes"). 4H = Low Quality, 5H = Medium, 6H = High. Low boosts wood gather, Medium boosts ore, High boosts scrap + max health + healing per use. Sell surplus weed at the Community Center.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📊</div>
+      <div class="feature-title">FARMER RANK</div>
+      <div class="feature-desc">Every plant you harvest is tracked. As your total climbs you hit rank milestones — each one rewards RP and Skill Points. Check progress with <code>/plants</code>. Crossbreed toward 3Y 3G plants for the fastest rank gains.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💰</div>
+      <div class="feature-title">RP & FARMBUCKS</div>
+      <div class="feature-desc">RP is the server currency. Earn it by farming, completing events, killing bosses, hitting rank milestones, and claiming <code>/daily</code>. Spend it at <code>/s</code>. FarmBucks are physical banknote RP you can carry and trade — deposit or withdraw at ATMs found at monuments or player bases.</div>
     </div>
     <div class="feature-card">
       <div class="feature-icon">🚁</div>
       <div class="feature-title">HELI SIGNALS</div>
-      <div class="feature-desc">Buy patrol helicopters in multiple difficulties that fight at your base. They cannot damage your base — pure combat challenge for RP rewards.</div>
+      <div class="feature-desc">Buy a Heli Signal from <code>/s</code> and use it at your base to call a patrol helicopter straight to you. Multiple difficulty tiers available — higher tiers drop better loot. Helis cannot damage your base structures, so fight freely at home.</div>
     </div>
     <div class="feature-card">
       <div class="feature-icon">💀</div>
       <div class="feature-title">BOSSES</div>
-      <div class="feature-desc">Map-roaming bosses with ~5,000 HP that reward RP on kill. Track them down and take them out for big payouts.</div>
+      <div class="feature-desc">Powerful boss NPCs with ~5,000 HP roam the map. They're announced in chat with a rough location when they spawn. Hunt them down solo or with a group — RP is rewarded on kill. Bring good gear, plenty of ammo, and healing items.</div>
     </div>
     <div class="feature-card">
       <div class="feature-icon">🎯</div>
       <div class="feature-title">WORLD EVENTS</div>
-      <div class="feature-desc">Convoy, Supermarket, Gas Station, Armored Train, and more. Events reward RP — coordinate with others or solo them.</div>
+      <div class="feature-desc"><b>Convoy</b> — armored NPC vehicles, multiple difficulty tiers, chase it down before it moves. <b>Armored Train</b> — board it while moving, clear NPCs, hack loot containers. <b>Supermarket</b> — kill the target NPC for the loot room code. <b>Gas Station</b> — two gangs fighting, choose a side or wipe both for all loot. All events reward RP.</div>
     </div>
     <div class="feature-card">
       <div class="feature-icon">⚔️</div>
       <div class="feature-title">RAIDABLE BASES</div>
-      <div class="feature-desc">Buy raids with <code>/buyraid</code>, check cost with <code>/raidcost</code>. Abandoned bases (5 days offline) go public — PVP zones where death means losing your inventory.</div>
+      <div class="feature-desc">Buy your own private NPC-defended base to raid solo or with your team. Check cost with <code>/raidcost</code>, start one with <code>/buyraid</code>, view stats with <code>/rb</code>. Difficulty ranges from Easy to Nightmare — start low if you're new to raiding.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🏚️</div>
+      <div class="feature-title">ABANDONED BASES</div>
+      <div class="feature-desc">Bases go public after all authorized players are offline for <b>4 days</b>. These are full PVP zones — <b style="color:var(--red)">if you die inside, you lose your entire inventory.</b> Log in at least once every 4 days to keep your base safe.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🏠</div>
+      <div class="feature-title">DEFENDABLE HOMES</div>
+      <div class="feature-desc">Waves of Frankenraider NPCs attack your base with melee, guns, and explosives. High RP rewards for surviving all waves. <b style="color:var(--red)">Build a separate dedicated base</b> — they can and will foundation wipe your buildings. Do not use your main base.</div>
     </div>
     <div class="feature-card">
       <div class="feature-icon">🎮</div>
-      <div class="feature-title">MINIGAMES</div>
-      <div class="feature-desc">Survival Arena (Battle Royale) and Zombie Infection. Watch for announcements in chat and jump in — last one standing wins.</div>
+      <div class="feature-title">PVP ARENA</div>
+      <div class="feature-desc">Full arena system with 10 game modes — Free for All, Team Deathmatch, Survival, Gun Game, One in the Chamber, Capture the Flag, NPC Survival, Slasher, Infected, and more. Use <code>/menu</code> to browse and join. Your inventory is untouched and you return to your exact location after.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🧟</div>
+      <div class="feature-title">ZOMBIE INFECTION</div>
+      <div class="feature-desc">All players start as Survivors. After ~45 seconds a random player becomes Zombie Prime. Two zombie hits converts a survivor. Survive until the timer ends to win. Type <code>/zijoin</code> when announced in chat. RP reward for the winning team — nothing is lost.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💧</div>
+      <div class="feature-title">ANYWHERE PUMPS</div>
+      <div class="feature-desc">Water your crops from anywhere on the map without standing next to each planter. A massive time saver for large farms. Craft one with <code>/pump craft</code> and place it near your planters — it handles watering automatically.</div>
     </div>
     <div class="feature-card">
       <div class="feature-icon">🎨</div>
-      <div class="feature-title">FREE SKINBOX</div>
-      <div class="feature-desc">Full skinbox access for every player at no cost. Use <code>/sb</code> to skin items, <code>/sd</code> for placed items, or <code>/skinrequest</code> for workshop skins by ID.</div>
+      <div class="feature-title">SKINS & SIGNS</div>
+      <div class="feature-desc">Apply Steam Workshop skins to items with <code>/sb</code>, skin deployed objects with <code>/sd</code>, or request a skin by ID with <code>/skinrequest</code>. Paste custom images onto signs with <code>/sil [url]</code> — direct .png or .jpg links work best. Skinbox requires VIP II or higher.</div>
     </div>
     <div class="feature-card">
       <div class="feature-icon">📈</div>
       <div class="feature-title">SKILLTREE</div>
-      <div class="feature-desc">Invest XP into buffs via <code>/st</code>. Track farming stats with <code>/stats</code> and playtime with <code>/playtime</code>. Progress means something here.</div>
+      <div class="feature-desc">Invest XP into permanent buffs via <code>/st</code>. VIP multipliers stack on top — VIP I gives 1.5x XP, VIP II gives 2x, VIP III gives 3x. Track your farming stats with <code>/plants</code> and playtime with <code>/playtime</code>.</div>
     </div>
   </div>
 </section>
@@ -961,62 +996,68 @@
     <div>
       <div class="cmd-group-title">// Core</div>
       <ul class="cmd-list">
-        <li><code>/tp</code> <span class="cmd-desc">Teleport GUI</span></li>
-        <li><code>/warp</code> <span class="cmd-desc">Warp to Community Center & more</span></li>
-        <li><code>/voteday</code> <span class="cmd-desc">Vote to skip night</span></li>
-        <li><code>/s</code> <span class="cmd-desc">Store UI</span></li>
+        <li><code>/s</code> <span class="cmd-desc">Open the RP store</span></li>
+        <li><code>/daily</code> <span class="cmd-desc">Claim your free daily RP bonus</span></li>
         <li><code>/transfer</code> <span class="cmd-desc">Send RP to another player</span></li>
-        <li><code>/trade &lt;player&gt;</code> <span class="cmd-desc">Open trade with player</span></li>
-        <li><code>/remove</code> <span class="cmd-desc">Demolish within TC range</span></li>
-        <li><code>/info</code> <span class="cmd-desc">Reopen the info UI</span></li>
+        <li><code>/trade &lt;player&gt;</code> <span class="cmd-desc">Open a trade with a player</span></li>
+        <li><code>/warp</code> <span class="cmd-desc">Open warp GUI — browse all locations</span></li>
+        <li><code>/menu</code> <span class="cmd-desc">Open the arena event selection UI</span></li>
+        <li><code>/remove</code> <span class="cmd-desc">Demolish structures within TC range</span></li>
+        <li><code>/lockmini</code> <span class="cmd-desc">Lock your minicopter</span></li>
+        <li><code>/voteday</code> <span class="cmd-desc">Vote to skip night</span></li>
       </ul>
     </div>
     <div>
-      <div class="cmd-group-title">// Teleport</div>
+      <div class="cmd-group-title">// Teleportation</div>
       <ul class="cmd-list">
-        <li><code>/sethome &lt;name&gt;</code> <span class="cmd-desc">Set a home point</span></li>
-        <li><code>/home &lt;name&gt;</code> <span class="cmd-desc">Teleport to home</span></li>
-        <li><code>/listhomes</code> <span class="cmd-desc">List all homes</span></li>
-        <li><code>/delhome &lt;name&gt;</code> <span class="cmd-desc">Delete a home</span></li>
-        <li><code>/tpr &lt;player&gt;</code> <span class="cmd-desc">Request teleport to player</span></li>
-        <li><code>/tpa &lt;name&gt;</code> <span class="cmd-desc">Accept a teleport request</span></li>
+        <li><code>/tp</code> <span class="cmd-desc">Open teleport GUI</span></li>
+        <li><code>/sethome &lt;name&gt;</code> <span class="cmd-desc">Save current position as a home</span></li>
+        <li><code>/home &lt;name&gt;</code> <span class="cmd-desc">Teleport to a saved home</span></li>
+        <li><code>/listhomes</code> <span class="cmd-desc">View all saved homes</span></li>
+        <li><code>/delhome &lt;name&gt;</code> <span class="cmd-desc">Delete a saved home</span></li>
+        <li><code>/tpr &lt;player&gt;</code> <span class="cmd-desc">Send a teleport request to a player</span></li>
+        <li><code>/tpa</code> <span class="cmd-desc">Accept an incoming teleport request</span></li>
       </ul>
     </div>
     <div>
       <div class="cmd-group-title">// Farming & Progression</div>
       <ul class="cmd-list">
-        <li><code>/st</code> <span class="cmd-desc">Skilltree — invest XP into buffs</span></li>
-        <li><code>/stats</code> <span class="cmd-desc">View your farming stats</span></li>
+        <li><code>/plants</code> <span class="cmd-desc">View harvest stats and Farmer Rank progress</span></li>
+        <li><code>/st</code> <span class="cmd-desc">Skilltree — invest XP into permanent buffs</span></li>
         <li><code>/playtime</code> <span class="cmd-desc">View your playtime</span></li>
         <li><code>/playtime top</code> <span class="cmd-desc">Server playtime leaderboard</span></li>
-        <li><code>/pump</code> <span class="cmd-desc">Anywhere Pump help</span></li>
         <li><code>/pump craft</code> <span class="cmd-desc">Craft an Anywhere Pump</span></li>
-      </ul>
-    </div>
-    <div>
-      <div class="cmd-group-title">// Skins</div>
-      <ul class="cmd-list">
-        <li><code>/sb</code> <span class="cmd-desc">Open Skinbox</span></li>
-        <li><code>/sd</code> <span class="cmd-desc">Skin placed items</span></li>
-        <li><code>/skinrequest</code> <span class="cmd-desc">Request workshop skin by ID</span></li>
-        <li><code>/sil &lt;url&gt;</code> <span class="cmd-desc">Set sign image from URL</span></li>
-        <li><code>/silrestore</code> <span class="cmd-desc">Restore sign image</span></li>
+        <li><code>/pump</code> <span class="cmd-desc">Anywhere Pump help</span></li>
       </ul>
     </div>
     <div>
       <div class="cmd-group-title">// Raiding</div>
       <ul class="cmd-list">
-        <li><code>/raidcost</code> <span class="cmd-desc">Check current raid price</span></li>
-        <li><code>/buyraid</code> <span class="cmd-desc">Purchase a raidable base</span></li>
-        <li><code>/rb</code> <span class="cmd-desc">View your raiding stats</span></li>
+        <li><code>/raidcost</code> <span class="cmd-desc">Check price for each raid difficulty</span></li>
+        <li><code>/buyraid</code> <span class="cmd-desc">Purchase and spawn a raidable base</span></li>
+        <li><code>/rb</code> <span class="cmd-desc">View your personal raiding stats</span></li>
       </ul>
     </div>
     <div>
-      <div class="cmd-group-title">// Misc</div>
+      <div class="cmd-group-title">// Skins & Signs</div>
       <ul class="cmd-list">
-        <li><code>/survival</code> <span class="cmd-desc">Join Survival Arena when announced</span></li>
-        <li><code>/lockmini</code> <span class="cmd-desc">Lock your minicopter</span></li>
-        <li><code>/rspawn mini</code> <span class="cmd-desc">Spawn mini (VIP III)</span></li>
+        <li><code>/sb</code> <span class="cmd-desc">Open Skinbox for inventory items (VIP II+)</span></li>
+        <li><code>/sd</code> <span class="cmd-desc">Skin a deployed item you're looking at (VIP II+)</span></li>
+        <li><code>/skinrequest &lt;ID&gt;</code> <span class="cmd-desc">Request a skin by Steam Workshop ID</span></li>
+        <li><code>/sil &lt;url&gt;</code> <span class="cmd-desc">Paste image onto a sign from URL</span></li>
+        <li><code>/silrestore</code> <span class="cmd-desc">Restore a sign to default</span></li>
+      </ul>
+    </div>
+    <div>
+      <div class="cmd-group-title">// Events & Arena</div>
+      <ul class="cmd-list">
+        <li><code>/survival</code> <span class="cmd-desc">Join Survival Arena (when announced)</span></li>
+        <li><code>/zijoin</code> <span class="cmd-desc">Join Zombie Infection (when announced)</span></li>
+        <li><code>/menu</code> <span class="cmd-desc">Browse all arena game modes</span></li>
+        <li><code>/rspawn mini</code> <span class="cmd-desc">Spawn a minicopter (VIP III)</span></li>
+        <li><code>/rspawn horse</code> <span class="cmd-desc">Spawn a horse (VIP III)</span></li>
+        <li><code>/rspawn boat</code> <span class="cmd-desc">Spawn a boat (VIP III)</span></li>
+        <li><code>/rspawn rhib</code> <span class="cmd-desc">Spawn a RHIB (VIP III)</span></li>
       </ul>
     </div>
   </div>
@@ -1058,14 +1099,14 @@
       <div class="step-num">01</div>
       <div>
         <div class="step-title">CLICK OPEN IN RUST</div>
-        <div class="step-desc">Hit the button at the top of this page. It launches Rust via Steam and connects you automatically.</div>
+        <div class="step-desc">Hit the button below. It launches Rust via Steam and connects you automatically.</div>
       </div>
     </div>
     <div class="join-step">
       <div class="step-num">02</div>
       <div>
         <div class="step-title">OR USE F1 CONSOLE</div>
-        <div class="step-desc">Press <b>F1</b> in Rust, then type <code>connect 50.20.242.36:28015</code> and hit Enter.</div>
+        <div class="step-desc">Press <b>F1</b> in Rust, then type <code>connect 89.213.214.15:28020</code> and hit Enter.</div>
       </div>
     </div>
     <div class="join-step">
@@ -1077,8 +1118,12 @@
     </div>
   </div>
 
+  <div class="note" style="margin-bottom:24px">
+    <b style="color:var(--accent2)">Quick tips once you're in:</b> Use <code>/warp</code> to get around — the Community Center is your first stop. Sell crops to NPC vendors there to earn RP. Open <code>/s</code> to see the store. Claim <code>/daily</code> for free RP every day.
+  </div>
+
   <div style="display:flex; gap:10px; flex-wrap:wrap">
-    <a class="btn btn-primary" href="steam://run/252490//+connect%2050.20.242.36:28015">▶ OPEN IN RUST</a>
+    <a class="btn btn-primary" href="steam://run/252490//+connect%2089.213.214.15:28020">▶ OPEN IN RUST</a>
     <a class="btn btn-gold" href="https://farming-paradise.tebex.io/category/2862993" target="_blank" rel="noopener">⭐ VIP SHOP</a>
     <a class="btn" href="https://discord.gg/k8Afn6cSUm" target="_blank" rel="noopener">Discord</a>
   </div>
@@ -1119,10 +1164,10 @@
   // Player count via Steam API proxy
   async function fetchPlayerCount() {
     try {
-      const r = await fetch('https://api.steampowered.com/ISteamApps/GetServersAtAddress/v0001/?addr=50.20.242.36&format=json');
+      const r = await fetch('https://api.steampowered.com/ISteamApps/GetServersAtAddress/v0001/?addr=89.213.214.15&format=json');
       const d = await r.json();
       if (d.response && d.response.servers) {
-        const srv = d.response.servers.find(s => s.gameport == 28015);
+        const srv = d.response.servers.find(s => s.gameport == 28020);
         if (srv) {
           document.getElementById('playerCount').textContent = srv.players || '0';
           document.getElementById('playerMax').textContent = `/ ${srv.max_players || '?'} max`;
@@ -1132,7 +1177,7 @@
     } catch(e) {}
     // Fallback — use Steam Game Server browser API
     try {
-      const r2 = await fetch(`https://api.steampowered.com/ISteamGameServers/GetServerList/v1/?filter=\\addr\\50.20.242.36:28015&format=json`);
+      const r2 = await fetch(`https://api.steampowered.com/ISteamGameServers/GetServerList/v1/?filter=\\addr\\89.213.214.15:28020&format=json`);
       const d2 = await r2.json();
       if (d2.response && d2.response.servers && d2.response.servers.length) {
         const s = d2.response.servers[0];
