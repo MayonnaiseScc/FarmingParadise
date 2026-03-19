@@ -7,6 +7,7 @@
   <meta name="description" content="Farming Paradise — a peaceful Rust PVE server. Farm, fight bosses, run events. Monthly wipes. Free skinbox. Active admins."/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <script src="https://js.tebex.io/v1.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -805,8 +806,8 @@
         <li>5,000 RP Kit (Every 14 Days)</li>
       </ul>
       <div style="display:flex;gap:8px;flex-wrap:wrap">
-        <a class="btn btn-primary" href="https://farming-paradise.tebex.io/package/6618544" target="_blank" rel="noopener">Subscribe $10/mo</a>
-        <a class="btn" href="https://farming-paradise.tebex.io/package/7030134" target="_blank" rel="noopener">Lifetime $100</a>
+        <button class="btn btn-primary" data-tebex-checkout="6618544">Subscribe $10/mo</button>
+        <button class="btn" data-tebex-checkout="7030134">Lifetime $100</button>
       </div>
     </div>
 
@@ -828,8 +829,8 @@
         <li>8,000 RP Kit (Every 14 Days)</li>
       </ul>
       <div style="display:flex;gap:8px;flex-wrap:wrap">
-        <a class="btn btn-primary" href="https://farming-paradise.tebex.io/package/6618564" target="_blank" rel="noopener">Subscribe $20/mo</a>
-        <a class="btn" href="https://farming-paradise.tebex.io/package/7030139" target="_blank" rel="noopener">Lifetime $200</a>
+        <button class="btn btn-primary" data-tebex-checkout="6618564">Subscribe $20/mo</button>
+        <button class="btn" data-tebex-checkout="7030139">Lifetime $200</button>
       </div>
     </div>
 
@@ -856,8 +857,8 @@
         <li>Personal Recycler</li>
       </ul>
       <div style="display:flex;gap:8px;flex-wrap:wrap">
-        <a class="btn btn-gold" href="https://farming-paradise.tebex.io/package/6618562" target="_blank" rel="noopener">Subscribe $30/mo</a>
-        <a class="btn" href="https://farming-paradise.tebex.io/package/7030141" target="_blank" rel="noopener">Lifetime $300</a>
+        <button class="btn btn-gold" data-tebex-checkout="6618562">Subscribe $30/mo</button>
+        <button class="btn" data-tebex-checkout="7030141">Lifetime $300</button>
       </div>
     </div>
 
@@ -867,11 +868,11 @@
   <div style="margin-top:24px">
     <div class="section-label" style="margin-bottom:12px">// À La Carte</div>
     <div style="display:flex;gap:8px;flex-wrap:wrap">
-      <a class="btn" href="https://farming-paradise.tebex.io/package/6679141" target="_blank" rel="noopener">10,000 RP — $10</a>
-      <a class="btn" href="https://farming-paradise.tebex.io/package/7030110" target="_blank" rel="noopener">5 Skill Points — $5</a>
-      <a class="btn" href="https://farming-paradise.tebex.io/package/6778281" target="_blank" rel="noopener">Personal Recycler — $5</a>
-      <a class="btn" href="https://farming-paradise.tebex.io/package/7288051" target="_blank" rel="noopener">Waterless Sprinkler — $15</a>
-      <a class="btn" href="https://farming-paradise.tebex.io/package/7293971" target="_blank" rel="noopener">No Building Stability — $20</a>
+      <button class="btn" data-tebex-checkout="6679141">10,000 RP — $10</button>
+      <button class="btn" data-tebex-checkout="7030110">5 Skill Points — $5</button>
+      <button class="btn" data-tebex-checkout="6778281">Personal Recycler — $5</button>
+      <button class="btn" data-tebex-checkout="7288051">Waterless Sprinkler — $15</button>
+      <button class="btn" data-tebex-checkout="7293971">No Building Stability — $20</button>
     </div>
   </div>
 </section>
@@ -1161,6 +1162,21 @@
 
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Tebex checkout init
+  Tebex.checkout.init({
+    ident: "x0gm-aabc872a396b44e46006eedc6291afd57d5e57d3",
+    theme: "dark",
+  });
+
+  // Wire up all tebex buttons
+  document.querySelectorAll('[data-tebex-checkout]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      Tebex.checkout.launch({
+        packageId: parseInt(btn.getAttribute('data-tebex-checkout')),
+      });
+    });
+  });
 
   // Copy IP
   function copyIP() {
